@@ -36,6 +36,10 @@ CREATE TABLE [dbo].[NotaFiscalItem](
 	[ValorIcms] [decimal](18, 5) NULL,
 	[NomeProduto] [varchar](50) NULL,
 	[CodigoProduto] [varchar](20) NULL,
+	[BaseIPI]       DECIMAL (18, 5) NULL,
+    [AliquotaIPI]   DECIMAL (18, 5) NULL,
+    [ValorIPI]      DECIMAL (18, 5) NULL,
+    [Desconto]      DECIMAL (18, 5) NULL,
  CONSTRAINT [PK_NotaFiscalItem] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
